@@ -12,7 +12,7 @@ function showError(input, message) {
   small.innerText = message;
 }
 
-// Function to display success message
+// Function to display success mesage
 function showSucess(input, message) {
   const formElement = input.parentElement;
   formElement.className = "form-control success";
