@@ -12,7 +12,7 @@ function showError(input, message) {
   small.innerText = message;
 }
 
-// Function to display success mesage
+// Function to display success message
 function showSucess(input, message) {
   const formElement = input.parentElement;
   formElement.className = "form-control success";
@@ -75,10 +75,10 @@ function getFieldName(input) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   checkRequired([userName, email, password, confirmPassword]);
-  checkLength(userName, 3, 15);
-  checkLength(password, 6, 25);
-  checkLength(confirmPassword, 6, 25);
+  // checkLength(userName, 3, 15);
+  // checkLength(password, 6, 25);
+  // checkLength(confirmPassword, 6, 25);
 
   checkEmail(email);
-  checkPasswordsMatch(password, confirmPassword);
+  // checkPasswordsMatch(password, confirmPassword);
 });
