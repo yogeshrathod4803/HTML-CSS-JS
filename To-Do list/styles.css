@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/flipsnack-7oOnC_wbiFo-unsplash.jpg) no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  background-color: #f5f5f5;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#taskBar {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.task-adder {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  flex-basis: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-adder:hover {
+  background: #0056b3;
+}
+
+/* Updated Task List Styles */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Set the width to 100% to span the container */
+}
+
+.task {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #f7f7f7;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-done {
+  color: green;
+  font-size: 18px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #a1eaba;
+  border-radius: 4px;
+}
+
+.task-done:hover {
+  background-color: #ccf3d9;
+}
+
+.task-delete {
+  color: #8b0000;
+  font-size: 18px;
+  padding: 6px 12px;
+  border: none;
+  border: 1px solid #ed9090;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.task-delete:hover {
+  background-color: #f8aeae;
+}
+
+/* js styling */
+
+.task-finished {
+  text-decoration: line-through;
+}
